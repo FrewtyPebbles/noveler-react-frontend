@@ -1,0 +1,45 @@
+.ListRoot {
+	padding: 10px;
+	background-color: rgb(190, 190, 190);
+	border-radius: 10px;
+}
+
+.CardRoot {
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.Header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Managers {
+	padding: 10px;
+	background-color: rgb(35, 35, 35);
+	border-radius: 10px;
+	.ManagerName {
+		&:hover {
+			.ToolTip {
+				display: inline-block;
+				position: absolute;
+				transform: translate(-5px, 4px);
+				background-color: white;
+				padding: 3px;
+				border-style: dashed;
+				border-width: 1px;
+				border-radius: 5px;
+			}
+		}
+	}
+}
+
+.Name {
+	font-size: 30px;
+}
+
+.ToolTip {
+	display: none;
+}
